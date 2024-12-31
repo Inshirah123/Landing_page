@@ -1,0 +1,166 @@
+/* General styling */ 
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color:rgba(128, 128, 128, 0.734);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction:column ;
+    min-height: 100vh;
+} 
+ /* Header styling */
+ .header{
+    
+
+    background-color: black;
+    padding: 10px;
+    height: 100px;
+    margin-top: -0.2em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; 
+    font-size: 2em;
+    color: rgba(255, 255, 255, 0.875);
+    font-weight: bold;
+     
+}
+
+header h1{
+    position: absolute;
+    animation: scrollText 10s linear infinite;
+    white-space: nowrap;
+    left: 100%;
+    right: 20%;
+}
+@keyframes scrollText {
+    0%{
+        left: 100%;
+
+    }
+    100%{
+        left: -100%;
+    }
+}
+
+
+button{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+   padding: 8px 10px;
+   font-size: 12px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.2s ease;
+   gap: 30px;
+   margin-top: 50px;
+   margin-left: 45em;
+   
+   
+      
+}
+button:hover{
+    background-color:rgb(123, 44, 192);
+    transform:scale(0.95) ;
+}
+footer{
+    background-color: black;
+    color: #ffffffd4;
+    margin-top: 340px;
+    padding: 8px 8px;
+    border-radius: 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(128, 128, 128, 0.734);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Responsive styling..*/
+.header {
+    background-color: black;
+    padding: -35px;
+    height: 19vh; /* Relative height for flexibility */
+    margin-top: -0.2em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 2em;
+    color: rgba(255, 255, 255, 0.875);
+    font-weight: bold;
+    position: relative; /* Necessary for positioning child elements */
+}
+
+header h1 {
+    position: absolute;
+    animation: scrollText 10s linear infinite;
+    white-space: nowrap;
+    left: 100%;
+}
+
+@keyframes scrollText {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+button {
+    display: flex; /* Inline to prevent extra spacing */
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    padding: 8px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 5vh auto; /* Center the button and use relative units */
+}
+
+button:hover {
+    background-color: rgb(123, 44, 192);
+    transform: scale(0.95);
+}
+
+footer {
+    background-color: black;
+    color: #ffffffd4;
+    margin-top: auto; /* Automatically positions footer at the bottom */
+    padding: 8px 8px;
+    border-radius: 5px;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 600px) {
+    .header {
+        font-size: 1.5em; /* Adjust font size for better readability */
+    }
+
+    button {
+        font-size: 10px; /* Smaller font size for better fit */
+        margin: 5vh auto; /* Center the button on small screens */
+    }
+}
